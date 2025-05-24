@@ -1,0 +1,529 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+    background-color: black;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    width: 100%;
+}
+
+#taskbar {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#taskbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#taskbar a:hover {
+  color: #56c3ed;
+}
+
+
+#introDetails{
+    display: flex;
+}
+
+#introSection{
+    padding-bottom: 45px;
+    padding-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    scroll-margin-top: 150px;
+    background-color: lightgray;
+}
+
+#introSection p{
+    font-size: 200%;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#introText p{
+    font-size: 27px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0px;
+    padding-bottom: 0x;
+}
+
+#introSection img{
+    height: 40%;
+    width: 40%;
+    padding-top: 0%;
+    margin-left: 5%;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#nestabilitySection{
+    scroll-margin-top: 65px;
+    margin-bottom: 5%;
+}
+
+#nestabilitySection h2{
+    font-size: 300%;
+    text-align: center;
+}
+
+#nestabilitySection p{
+    font-size: 25px;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: left;
+    
+}
+
+#nestabilitySection img{
+    height: 48%;
+    width: 48%;
+}
+
+#nestabilityImg{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-top: 20px;
+    padding-bottom: 45px;
+}
+
+#nestabilityImg img{
+    height: 25%;
+    width: 25%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#stackInfo p{
+    text-align: center;
+}
+
+#designSection{
+    text-align: center;
+    padding-bottom: 45px;
+    scroll-margin-top: 10px;
+    padding-top: 1%;
+    background-color: lightgray;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#designSection p{
+    font-size: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#designSection h1{
+    font-size: 300%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#designSection h2{
+    font-size: 35px;
+    font-style: italic;
+}
+
+#designSection img{
+    height: 45%;
+    width: 45%;
+    box-shadow: 0 10px 20px rgba(86, 195, 237, 0.9);
+    margin-right: 5%;
+    padding-top: 0%;
+}
+
+#designInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#designInfo h2{
+    font-size: 200%;
+}
+
+#benefitsSection{
+    scroll-margin-top: 120px;
+}
+
+#benefitsSection img{
+    height: 45%;
+    width: 45%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#benefitsSection h1{
+    text-align: center;
+    font-size: 300%;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#benefitDetails{
+    padding: 20px;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-style: italic;
+}
+
+#sizes{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#comparisonSection{
+    scroll-margin-top: 65px;
+}
+
+#comparisonSection h1{
+    text-align: center;
+    font-style: italic;
+    font-size: 300%;
+}
+#comparisonSection p{
+    text-align: center;
+    font-size: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#palletImages img{
+    width: 25%;
+    height: 25%;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+#palletImages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tableTitles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 40px 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 5 5%;
+}
+
+thead {
+  background-color: #333;
+  color: white;
+  text-align: left;
+}
+
+thead th {
+  padding: 15px;
+  text-align: center;
+  font-size: 40px;
+  font-style: italic;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody th,
+tbody td {
+  padding: 15px;
+  vertical-align: top;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+th[scope="row"] {
+  font-weight: bold;
+  font-style: italic;
+  background-color: #f0f0f0;
+}
+
+#tableView{
+    display: flex;
+    justify-content: center;
+}
+
+#targetMarketSection{
+    scroll-margin-top: 70px;
+    margin-bottom: 45px;
+}
+
+#targetMarketSection h1{
+    text-align: center;
+    font-size: 300%;
+    font-style: italic;
+}
+
+#targetMarketSection p{
+    font-size: 25px;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+}
+
+#toolBinSection h2, #coiledSteelSection h2, #corrugatedSteelSection h2, #bandingSteelSection h2, #sidingPalletSection h2{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 5px;
+    font-size: 35px;
+    background-color: black;
+    color: #56c3ed;
+    box-shadow: 0 10px 20px rgba(86, 195, 237, 0.9);
+}
+
+#toolBinInfo img{
+    width: 20%;
+    height: 20%;
+    margin-left: 5%;
+}
+
+#toolBinInfo{
+    display: flex;
+    align-items: center;
+}
+
+#toolBinInfo p{
+    font-size: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: left;
+}
+
+#coiledSteelInfo{
+    display: flex;
+    align-items: center;
+}
+
+#coiledSteelInfo img{
+    width: 35%;
+    height: 35%;
+    margin-right: 5%;
+}
+
+#coiledSteelInfo p{
+    font-size: 25px;
+    margin-left: 15%;
+    margin-right: 5%;
+    text-align: left;
+}
+
+#coiledSteelImages{
+    display: flex;
+    justify-content: center;
+}
+
+#corrugatedSteelInfo img{
+    width: 50%;
+    height: 50%;
+    margin-left: 5%;
+}
+
+#corrugatedSteelInfo{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+#corrugatedSteelInfo p{
+    font-size: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: left;
+}
+
+#corrugatedSheetImages{
+    display: flex;
+    justify-content: center;
+}
+
+#bandingSteelInfo{
+    display: flex;
+    align-items: center;
+}
+
+#bandingSteelInfo img{
+    height: 45%;
+    width: 45%;
+    margin-right: 10%;
+}
+
+#bandingSteelInfo p{
+    text-align: left;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#bandingSteelImages{
+    display: flex;
+    justify-content: center;
+}
+
+#sidingPalletInfo{
+    display: flex;
+    align-items: center;
+}
+
+#sidingPalletInfo img{
+    margin-left: 5%;
+    height: 45%;
+    width: 45%;
+    margin-top: 25px;
+}
+
+#sidingPalletInfo p{
+    text-align: left;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#sidingImages{
+    display: flex;
+    justify-content: center;
+}
+
+#infoSection{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: lightgray;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    scroll-margin-top: 42px;
+}
+
+#infoSection h2{
+    font-size: 300%;
+    text-align: center;
+}
+
+#infoSection p{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#testVideos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+#testVideos img{
+    height: 25%;
+    width: 25%;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+#moreInfo p{
+    margin-bottom: 2%;
+}
+
+
+
+
+
+
+#customPalletSection{
+    padding-top: 20px;
+    background-color: lightgray;
+}
+
+#contactSection{
+    padding-top: 20px;
+    background-color: lightgray;
+}
+
+#footer{
+    background-color: black;
+}
+
+
+#headerImg{
+    width: 500px;
+    height: 100px; 
+}
+
+
+form.form-example {
+  display: table;
+}
+
+div.form-example {
+  display: table-row;
+}
+
+label,
+input {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+label {
+  padding-right: 10px;
+}
+
+
+#footer{
+    padding: 30px;
+}
+#footer p{
+    color: white;
+    text-align: center;
+    height: 30px;
+    font-style: italic;
+}
+
