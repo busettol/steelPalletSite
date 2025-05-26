@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     emailjs.sendForm("service_pp5q2fl", "template_ft1lwwr", form)
       .then(function () {
         alert("Email sent successfully!");
+        print("Email sent successfully!")
 
         form.reset();
       }, function (error) {

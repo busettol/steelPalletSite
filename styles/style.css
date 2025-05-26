@@ -1,6 +1,6 @@
 *{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
 }
 
 html{
@@ -11,6 +11,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 
 #header {
     background-color: black;
@@ -45,6 +46,7 @@ body {
 
 #introDetails{
     display: flex;
+    align-items: center;
 }
 
 #introSection{
@@ -133,7 +135,7 @@ body {
 }
 
 #designSection p{
-    font-size: 30px;
+    font-size: 20px;
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 50px;
@@ -147,9 +149,8 @@ body {
     padding-right: 5%;
 }
 
-#designSection h2{
+#designSection h5{
     font-size: 35px;
-    font-style: italic;
 }
 
 #designSection img{
@@ -172,6 +173,7 @@ body {
 
 #benefitsSection{
     scroll-margin-top: 120px;
+    margin-bottom: 50px;
 }
 
 #benefitsSection img{
@@ -188,6 +190,11 @@ body {
     font-weight: bold;
 }
 
+#benefitsSection p{
+    text-align: center;
+    font-size: 150%;
+}
+
 #benefitDetails{
     padding: 20px;
     font-size: 20px;
@@ -197,9 +204,16 @@ body {
 }
 
 #sizes{
-    display: flex;
+    /* display: flex;
+    align-items: center; */
     text-align: center;
     align-items: center;
+    justify-content: center;
+}
+
+#sizes img{
+    height: 50%;
+    width: 50%;
 }
 
 #comparisonSection{
@@ -565,9 +579,9 @@ input[type="submit"]:hover {
 }
 
 #contactSection p{
-    font-size: 25px;
-    margin-left: 30%;
-    margin-right: 30%;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
     text-align: center;
 }
 
@@ -645,3 +659,10 @@ label {
     font-style: italic;
 }
 
+#constructionIntro h2{
+    text-align: center;
+}
+
+#automotiveIntro h2{
+    text-align: center;
+}
