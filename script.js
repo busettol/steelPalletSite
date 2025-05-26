@@ -1,4 +1,5 @@
-// Initialize EmailJS with your public key
+//function for custom pallet form
+
 (function () {
   emailjs.init("ngolkZkTVk-ZPL5Av"); // Replace with your actual public key
 })();
@@ -11,6 +12,30 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault(); // Prevent default form submission
 
     emailjs.sendForm("service_pp5q2fl", "template_fsadola", form)
+      .then(function () {
+        alert("Email sent successfully!");
+
+        form.reset();
+      }, function (error) {
+        console.error("Failed to send email:", error);
+        alert("Failed to send email. Please try again.");
+      });
+  });
+});
+
+//function for contact us form
+(function () {
+  emailjs.init("ngolkZkTVk-ZPL5Av");
+})();
+
+// Handle form submission
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("questionForm");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    emailjs.sendForm("service_pp5q2fl", "template_ft1lwwr", form)
       .then(function () {
         alert("Email sent successfully!");
 

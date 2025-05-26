@@ -297,7 +297,8 @@ th[scope="row"] {
 #customPalletSection{
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-
+    padding-top: 20px;
+    background-color: lightgray;
 }
 
 #customPalletSection h1{
@@ -553,14 +554,50 @@ input[type="submit"]:hover {
     margin-bottom: 2%;
 }
 
+#contactSection{
+    text-align: center;
+    padding-bottom: 30px;
+}
 
+#contactSection h1{
+    font-size: 300%;
+    font-style: italic;
+}
 
+#contactSection p{
+    font-size: 25px;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+}
 
+#contactInfo{
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
+#formDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-#customPalletSection{
-    padding-top: 20px;
-    background-color: lightgray;
+#generalQuestionForm {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-example {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 #contactSection{
