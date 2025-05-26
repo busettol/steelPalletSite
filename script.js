@@ -1,20 +1,23 @@
-let lastScrollTop = 0;
-const header = document.getElementById('header');
-const taskbar = document.getElementById('taskbar');
+// Initialize EmailJS with your public key
+(function () {
+  emailjs.init("ngolkZkTVk-ZPL5Av"); // Replace with your actual public key
+})();
 
-window.addEventListener('scroll', () => {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+// Handle form submission
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("palletForm");
 
-    if (scrollTop > lastScrollTop) {
-        // Scrolling down
-        header.style.top = '-100px'; // hide header
-        taskbar.style.display = 'block'; // show nav
-    } else {
-        // Scrolling up
-        header.style.top = '0'; // show header
-        taskbar.style.display = 'none'; // hide nav
-    }
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default form submission
 
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
+    emailjs.sendForm("service_pp5q2fl", "template_fsadola", form)
+      .then(function () {
+        alert("Email sent successfully!");
+
+        form.reset();
+      }, function (error) {
+        console.error("Failed to send email:", error);
+        alert("Failed to send email. Please try again.");
+      });
+  });
 });
-
