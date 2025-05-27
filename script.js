@@ -1,10 +1,9 @@
-//function for custom pallet form
-
+//initialize emailjs
 (function () {
-  emailjs.init("ngolkZkTVk-ZPL5Av"); // Replace with your actual public key
+  emailjs.init("ngolkZkTVk-ZPL5Av");
 })();
 
-// Handle form submission
+// custom pallet form
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("palletForm");
 
@@ -13,22 +12,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     emailjs.sendForm("service_pp5q2fl", "template_fsadola", form)
       .then(function () {
-        alert("Email sent successfully!");
+        showAlert("Email sent successfully!");
+        form.reset();
 
         form.reset();
       }, function (error) {
         console.error("Failed to send email:", error);
-        alert("Failed to send email. Please try again.");
+        showAlert("Failed to send email. Please try again.");
       });
   });
 });
 
-//function for contact us form
-(function () {
-  emailjs.init("ngolkZkTVk-ZPL5Av");
-})();
-
-// Handle form submission
+// contact us form
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("questionForm");
 
@@ -37,13 +32,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
     emailjs.sendForm("service_pp5q2fl", "template_ft1lwwr", form)
       .then(function () {
-        alert("Email sent successfully!");
+        // showAlert("Email sent successfully!");
+        alert("Email sent successfully.")
         print("Email sent successfully!")
+        form.reset();
 
         form.reset();
       }, function (error) {
         console.error("Failed to send email:", error);
-        alert("Failed to send email. Please try again.");
+        // showAlert("Failed to send email. Please try again.");
+        alert("Failed to send email. Please try again.")
       });
   });
 });
+
+// function showAlert(message) {
+//   const alertBox = document.getElementById("emailAlert");
+//   const alertMessage = document.getElementById("alertMessage");
+
+//   alertMessage.textContent = message;
+//   alertBox.classList.remove("hidden");
+// }
+
+// function closeAlert() {
+//   const alertBox = document.getElementById("emailAlert");
+//   alertBox.classList.add("hidden");
+// }
