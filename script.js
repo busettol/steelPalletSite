@@ -58,3 +58,19 @@ document.addEventListener("DOMContentLoaded", function () {
 //   const alertBox = document.getElementById("emailAlert");
 //   alertBox.classList.add("hidden");
 // }
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target); // optional for one-time animation
+    }
+  });
+}, {
+  threshold: 0.1
+});
+
+// Observe all sections with the fade-in class
+document.querySelectorAll('.fade-in-section').forEach(section => {
+  observer.observe(section);
+});
