@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
         print("Email sent successfully!")
         form.reset();
 
-        form.reset();
       }, function (error) {
         console.error("Failed to send email:", error);
         // showAlert("Failed to send email. Please try again.");
@@ -46,24 +45,31 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// function showAlert(message) {
-//   const alertBox = document.getElementById("emailAlert");
-//   const alertMessage = document.getElementById("alertMessage");
 
-//   alertMessage.textContent = message;
-//   alertBox.classList.remove("hidden");
-// }
+//section fade-in function
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add('visible');
+//       observer.unobserve(entry.target); // optional for one-time animation
+//     }
+//   });
+// }, {
+//   threshold: 0.15
+// });
 
-// function closeAlert() {
-//   const alertBox = document.getElementById("emailAlert");
-//   alertBox.classList.add("hidden");
-// }
+// // Observe all sections with the fade-in class
+// document.querySelectorAll('.fade-in-section').forEach(section => {
+//   observer.observe(section);
+// });
 
+//updated functino. sections fade in and out. 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
-      observer.unobserve(entry.target); // optional for one-time animation
+    } else {
+      entry.target.classList.remove('visible');
     }
   });
 }, {
@@ -74,3 +80,4 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-in-section').forEach(section => {
   observer.observe(section);
 });
+
