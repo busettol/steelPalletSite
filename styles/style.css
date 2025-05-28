@@ -87,7 +87,6 @@ body {
 
 #nestabilitySection{
     scroll-margin-top: 65px;
-    margin-bottom: 5%;
     width: 100%;
 }
 
@@ -650,7 +649,6 @@ label {
 #footer{
     padding: 30px;
     background-color: black;
-    width: 100%;
 }
 #footer p{
     color: white;
