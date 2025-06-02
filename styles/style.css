@@ -47,6 +47,45 @@ body {
   color: #56c3ed;
 }
 
+#currentPallets{
+    text-align: center;
+    margin: 5% 15%;
+}
+
+#currentPallets p{
+    font-size: 20px;
+}
+
+#curentPallets h1{
+    font-size: 300%;
+}
+
+#currentPalletsImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-height: 600px;
+}
+
+#currentPalletsImg img{
+    height: 300px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 5%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#currentPalletInfo{
+    text-align: left;
+    margin-bottom: 70px;
+}
+
+#currentPallets h3{
+    color: #56c3ed;
+}
+
+
 
 #introDetails{
     display: flex;
@@ -78,8 +117,6 @@ body {
     padding-right: 5%;
     padding-top: 0px;
     padding-bottom: 0x;
-    font-size-adjust: 0.545;
-
 }
 
 #introSection img{
@@ -107,7 +144,6 @@ body {
     padding-left: 15%;
     padding-right: 15%;
     text-align: left;
-    
 }
 
 #nestabilityImg{
@@ -143,7 +179,7 @@ body {
 }
 
 #designSection h1{
-    font-size: 250%;
+    font-size: 300%;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -714,5 +750,14 @@ label {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
+
+    #currentPalletsImg{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #currentPalletsImg img{
+        height: 200px;
     }
 }
