@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(function () {
         // showAlert("Email sent successfully!");
         alert("Email sent successfully.")
-        print("Email sent successfully!")
         form.reset();
 
       }, function (error) {
