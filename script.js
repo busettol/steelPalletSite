@@ -3,25 +3,25 @@
   emailjs.init("ngolkZkTVk-ZPL5Av");
 })();
 
-// custom pallet form
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("palletForm");
+// // custom pallet form
+// document.addEventListener("DOMContentLoaded", function () {
+//   const form = document.getElementById("palletForm");
 
-  form.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent default form submission
+//   form.addEventListener("submit", function (event) {
+//     event.preventDefault(); // Prevent default form submission
 
-    emailjs.sendForm("service_pp5q2fl", "template_fsadola", form)
-      .then(function () {
-        showAlert("Email sent successfully!");
-        form.reset();
+//     emailjs.sendForm("service_pp5q2fl", "template_fsadola", form)
+//       .then(function () {
+//         showAlert("Email sent successfully!");
+//         form.reset();
 
-        form.reset();
-      }, function (error) {
-        console.error("Failed to send email:", error);
-        showAlert("Failed to send email. Please try again.");
-      });
-  });
-});
+//         form.reset();
+//       }, function (error) {
+//         console.error("Failed to send email:", error);
+//         showAlert("Failed to send email. Please try again.");
+//       });
+//   });
+// });
 
 // contact us form
 document.addEventListener("DOMContentLoaded", function () {

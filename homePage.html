@@ -22,6 +22,19 @@
         <a href="/steelPalletSite/constructionPage.html">Construction</a>
     </nav>
 
+
+    <div id="introSection" class="fade-in-section">
+        <p><i>Sherwood Innovations Inc.</i> introduces a newly patented <i><b>lightweight</b></i> and <i><b>nestable steel</b></i> pallet design.</p>
+       
+        <div id="introDetails">
+            <img id="steelPalletImg" src="images/industry/topView.jpeg">
+            <div id="introText">
+                <p><b><i>About the patent</i></b> <i>(Patent No.: US 11,760,537 B1)</i></p>
+                <p>Created from thin gauge ultra high strength steel, this nestable pallet introduces a new material for pallet development which is stronger and more durable than the conventional wood and plastic.</p>
+            </div>
+        </div>
+    </div>
+
     <div id="currentPallets">
         <h1>The Current Pallet Eco-System</h1>
         <p>The current market for pallets consists almost entirely of <b>wood or plastic pallets</b>. While they have been the common use in the shipping industry, they come with a <b>large amount of drawbacks</b>.</p><br>
@@ -38,18 +51,6 @@
         <div id="currentPalletsImg">
             <img src="images/industry/woodenPalletStack.jpg">
             <img src="images/industry/plasticPalletStack.jpg">
-        </div>
-    </div>
-
-    <div id="introSection" class="fade-in-section">
-        <p><i>Sherwood Innovations Inc.</i> introduces a newly patented <i><b>lightweight</b></i> and <i><b>nestable steel</b></i> pallet design.</p>
-       
-        <div id="introDetails">
-            <img id="steelPalletImg" src="images/industry/topView.jpeg">
-            <div id="introText">
-                <p><b><i>About the patent</i></b> <i>(Patent No.: US 11,760,537 B1)</i></p>
-                <p>Created from thin gauge ultra high strength steel, this nestable pallet introduces a new material for pallet development which is stronger and more durable than the conventional wood and plastic.</p>
-            </div>
         </div>
     </div>
 
@@ -168,10 +169,13 @@
     <div id="customPalletSection" class="fade-in-section">
         <h1>Custom Pallet Sizing for any application</h1>
         <div>
-            <p>Custom steel pallets are designed and created in any size to meet all your job specific needs. <b>Contact us for a quote on your specific size.</b></p>
+            <p>We have to capability to create custom steel pallets in any size to meet all your job specific needs. <b>Contact us for a quote on your specific size.</b></p>
             
+            <a href="#contactSection" class="navigate-button">Contact Us!</a>
+
+
             <!-- custom pallet form -->
-            <div id="formDiv">
+            <!-- <div id="formDiv">
                 <div id="customPalletForm">
                     <form id="palletForm">
                         <div class="form-example">
@@ -194,24 +198,12 @@
                             <label for="length">Pallet length:</label>
                             <input type="text" name="pallet_length" id="length" required />
                         </div>
-                        <!-- <div class="form-example">
-                            <label for="industry">Industry:</label>
-                            <input type="text" name="user_industry" id="length" required />
-                        </div>
-                        <div class="form-example">
-                            <label for="market">Market:</label>
-                            <input type="text" name="user_market" id="length" required />
-                        </div>
-                        <div class="form-example">
-                            <label for="payload">Payload:</label>
-                            <input type="text" name="user_payload" id="length" required />
-                        </div> -->
                         <div class="form-example">
                             <input type="submit" value="Submit" />
                         </div>
                     </form>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -296,6 +288,11 @@
         </div>
     </div>
 
+
+    <div id="customerTestimonials">
+
+    </div>
+
     <div id="contactSection" class="fade-in-section">
         <div id="contactInfo">
             <h1>Contact Us</h1>
@@ -320,8 +317,18 @@
                         <input type="text" name="user_phone" id="phone" />
                     </div>
                     <div class="form-example">
+                        <label>What are you inquiring about?</label><br />
+                        <div class="radio-group">
+                            <input type="radio" id="customPallet" name="inquiry_type" value="customPallet" required />
+                            <label for="customPallet">Custom Pallets</label><br />
+
+                            <input type="radio" id="generalInquiry" name="inquiry_type" value="generalInquiry" />
+                            <label for="generalInquiry">General Inquiry</label><br />
+                        </div> 
+                    </div>
+                    <div class="form-example">
                         <label for="message">Message: </label>
-                        <input type="text" name="user_message" id="message"/>
+                        <textarea name="user_message" id="message" rows="6"></textarea>
                     </div>
                     <div class="form-example">
                         <input type="submit" value="Submit" />
