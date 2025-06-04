@@ -55,7 +55,7 @@ body {
 #currentPallets{
     text-align: center;
     padding: 5% 15%;
-    background-image: url("/images/industry/whitebackground.jpg");
+    background-image: url("../images/industry/whitebackground.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
