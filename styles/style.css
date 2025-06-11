@@ -13,6 +13,10 @@ body {
   padding: 0;
 }
 
+p{
+    font-size: 20px;
+}
+
 #header {
     background-color: black;
     height: 150px;
@@ -200,6 +204,7 @@ body {
     width: 55%;
     box-shadow: 0 10px 20px rgba(86, 195, 237, 0.9);
     margin: 50px;
+    border-radius: 35px;
 }
 
 #designInfo{
@@ -684,21 +689,26 @@ th[scope="row"] {
     border-radius: 6px;
     border: 1px solid #ccc;
     font-size: 16px;
-    resize: vertical; /* allows users to expand it vertically if they want */
+    resize: vertical;
     box-sizing: border-box;
 }
 
 
 
 #footer{
-    padding: 30px;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2% 5%;
 }
+
 #footer p{
     color: white;
-    text-align: center;
+    text-align: left;
     height: 30px;
-    font-style: italic;
+    font-size: 15px;
+    margin: 25px;
 }
 
 .hidden {
@@ -754,6 +764,10 @@ th[scope="row"] {
         flex-direction: column;
     }
 
+    #introSection img{
+        width: 75%;
+    }
+
     #currentPalletsImg{
         align-items: center;
         flex-direction: column;
@@ -766,4 +780,10 @@ th[scope="row"] {
     #bandingSteelImages, #sidingImages, #corrugatedSheetImages, #coiledSteelImages, #toolBinInfo img{
         margin: 25px;
     }
+
+    #designSection img{
+        margin: 50px 0px;
+        width: 80%;
+    }
+    
 }
