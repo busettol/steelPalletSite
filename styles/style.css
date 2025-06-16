@@ -96,9 +96,22 @@ p{
 #currentPallets h3{
     color: #007BFF;
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
-    
 }
 
+#introBenefits{
+    margin: 5% 15%;
+}
+
+#introBenefits p{
+    text-align: start;
+}
+
+#introBenefits h3{
+    text-align: start;
+    font-size: 1.5rem;
+    color: #007BFF;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
 
 
 #introDetails{
@@ -107,7 +120,12 @@ p{
     justify-content: center;
 }
 
-#introSection{
+#introSection h1{
+    text-align: center;
+}
+
+
+#introDetails{
     padding-bottom: 45px;
     padding-top: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -116,7 +134,7 @@ p{
     width: 100%;
 }
 
-#introSection p{
+#introDetails p{
     font-size: 200%;
     padding-left: 10%;
     padding-right: 10%;
@@ -126,9 +144,9 @@ p{
 }
 
 #introText p{
-    font-size: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
+    font-size: 1.5rem;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-top: 0px;
     padding-bottom: 0x;
 }
@@ -136,7 +154,8 @@ p{
 #introSection img{
     height: 40%;
     width: 40%;
-    padding-top: 0%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     margin-left: 5%;
     border-radius: 25px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -729,14 +748,29 @@ th[scope="row"] {
         display: flex;
         align-items: center;
         flex-direction: column;
+        padding: 40px; /* Optional: for spacing inside */
+
+    }
+
+    #testVideos {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    #testVideos div {
+        width: 90%;
+        margin: 15px 15px;
+    }
+
+    #testVideos img {
+        width: 60%;
+        height: auto;
+        margin: 10px;
     }
 
     #coiledSteelInfo{
         align-items: start;
         justify-content: start;
-    }
-    #coiledSteelInfo p{
-        margin-left: 5%;
     }
 
     #nestabilityImg img{
@@ -783,5 +817,47 @@ th[scope="row"] {
         margin: 50px 0px;
         width: 80%;
     }
+
+    #toolBinInfo img,
+    #bandingSteelInfo img,
+    #corrugatedSteelInfo img,
+    #sidingPalletInfo img {
+        width: 40%;
+        height: auto;
+        margin: 15px 0;
+    }
+
+    #tableView {
+    overflow-x: auto;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    thead th {
+        font-size: 18px;
+    }
     
+    h1, h2 {
+        font-size: 180% !important;
+    }
+
+    .navigate-button {
+        font-size: 20px;
+        padding: 10px 16px;
+    }
+
+    p {
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+
+    #customPalletSection p,
+    #contactSection p,
+    #infoSection p {
+        margin: 0 5%;
+    }
+
+
 }

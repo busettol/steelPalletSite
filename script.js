@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       }, function (error) {
         console.error("Failed to send email:", error);
-        // showAlert("Failed to send email. Please try again.");
         alert("Failed to send email. Please try again.")
       });
   });
