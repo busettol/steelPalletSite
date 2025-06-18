@@ -1,0 +1,503 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p{
+    font-size: 20px;
+}
+
+#centeredText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#header {
+    background-color: black;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    width: 100%;
+}
+
+#headerImg{
+    width: 500px;
+    height: 100px; 
+}
+
+#taskbar {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+#taskbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#taskbar a:hover {
+  color: #56c3ed;
+}
+
+#constructionIntroSection{
+    background-image: url(/images/construction/whiteBackground2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5px 0px;
+}
+#introDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 10% 2%;
+}
+
+#introDetails img{
+    height: 25%;
+    width: 25%;
+    border-radius: 10%;
+    margin-left: 10%;
+}
+
+#introText{
+    margin: 10%;
+}
+
+#howItWorksSection{
+    background-image: url(/images/construction/darkbackground.jpg);
+    padding: 100px 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#howItWorksSection h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+#howItWorksSection p{
+    color: white;
+    text-align: center;
+    width: 50%;
+}
+
+#howItWorksImages {
+  display: flex;
+  justify-content: center; /* even space between image blocks */
+  gap: 100px;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+  padding: 20px;
+  align-items: center;
+}
+
+#howItWorksImages > div {
+  width: 300px; /* adjust as needed */
+  text-align: center;
+}
+
+#howItWorksImages img {
+  width: 100%;
+  height: 350px;
+  object-fit: contain; /* or 'contain' if you want no cropping */
+  border-radius: 8px;
+  /* border: white solid 2px; */
+}
+
+
+#edgeClamp, #fireStop, #coneSleeve{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#edgeClamp p, #fireStop p, #coneSleeve p{
+    font-size: 30px;
+    font-style: italic;
+    width: auto;
+    font-weight: 500; /* makes it a bit bolder without being too thick */
+    line-height: 1.4;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+#problemsSection{
+    padding-top: 30px;  
+    padding-bottom: 30px;  
+    background-image: url(/images/construction/background3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#problemsSection h2{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#problemsSection p{
+    text-align: center;
+    width: 100%;
+}
+
+#problemsImages {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+#problemsImages div {
+    text-align: center;
+    max-width: 300px;
+}
+
+#problemsImages img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+    border-radius: 10%;
+}
+
+
+#oldSystemSection{
+    background-image: url(/images/construction/backgroundvertical.png);
+}
+
+#oldSystemSection img{
+    width: 30%;
+    margin: 10%;
+    border-radius: 10px;
+}
+
+#oldSystemSection p{
+    color: white;
+    text-align: center;
+    margin: 10%;
+}
+
+#oldSystemSection h2{
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 250%;
+}
+
+#oldPiping, #whyItsInefficient{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#featuresSection h2{
+    text-align: center;
+    font-size: 250%;
+}
+
+#featuresSection{
+    background-image: url(/images/construction/background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 90px 0px;
+}
+
+#features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+#features p{
+    margin: 25px;
+}
+
+#featuresImages{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#featuresImg1, #featuresImg2, #featuresImg3, #featuresImg4, #featuresImg5{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#featuresImg1 img, #featuresImg2 img, #featuresImg3 img, #featuresImg4 img, #featuresImg5 img{
+    width: 60px;
+}
+
+#featuresImg1 p, #featuresImg2 p, #featuresImg3 p, #featuresImg4 p, #featuresImg5 p{
+    text-align: left;
+}
+
+#componentsSection{
+    background-image: url(/images/construction/backgroundvertical.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+}
+
+#componentsSection h2{
+    text-align: center;
+}
+
+#componentsSection i{
+    color: #0066ff;
+}
+
+#singleClampInfo, #doubleClampInfo, #fireStopInfo, #coneSleeveInfo{
+    display: flex;
+    align-items: center;
+}
+
+#singleClampInfo img, #doubleClampInfo img, #fireStopInfo img{
+    width: 25%;
+    height: 25%;
+    margin: 50px 100px;
+}
+
+#coneSleeveInfo img{
+    height: 25%;
+    width: 25%;
+    margin: 45px 100px;
+    
+}
+
+#singleClampInfo p, h3, #doubleClampInfo p, h3, #fireStopInfo p, h3, #coneSleeveInfo p, h3{
+    text-align: center;
+    margin-left: 10%;
+    font-size: 150%;
+    color: white;
+}
+
+#compareSection{
+    text-align: center;
+    padding: 5% 15%;
+    background-image: url(/images/construction/background2.jpg);
+}
+
+#compareTable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: #000;
+}
+
+th, td {
+    padding: 16px;
+    border: 2px solid #1f3f87;
+}
+
+th {
+    background-color: #0066d9;
+    color: white;
+    font-size: 1.1em;
+}
+
+td {
+    background-color: #000;
+    font-size: 1em;
+    color: white;
+}
+
+.check {
+    color: white;
+    font-size: 1.5em;
+}
+
+.cross {
+    color: white;
+    font-size: 1.5em;
+}
+
+#contactSection{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    background-image: url(/images/construction/background.png);
+    background-size: cover;
+    height: 1200px;
+}
+
+#contactSection h1{
+    font-size: 300%;
+    font-style: italic;
+}
+
+#contactSection p{
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
+
+#contactInfo{
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+}
+
+#formDiv {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+#questionForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-group{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-example {
+    margin-bottom: 20px;
+}
+
+.form-example label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-example input[type="text"],
+.form-example input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-example input[type="radio"] {
+    margin-right: 10px;
+}
+
+.form-example input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-example input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: vertical; /* allows users to expand it vertically if they want */
+    box-sizing: border-box;
+}
+
+
+#footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2% 5%;
+}
+
+#footer p{
+    color: white;
+    text-align: left;
+    height: 30px;
+    font-size: 15px;
+    margin: 25px;
+}
+
+@media (max-width: 780px) {
+    #introDetails{
+        flex-direction: column;
+    }
+
+    #edgeClamp p, #fireStop p, #coneSleeve p{
+        width: 500px;
+    }
+
+    #problemsImages{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    #problemsImages img{
+        height: 20%;    
+    }
+
+
+    #introDetails img{
+        width: 50%;
+    }
+
+    #howItWorksImages{
+        gap: 10px;
+    }
+
+    #compareSection{
+        padding: 5% 0%;
+    }
+}
