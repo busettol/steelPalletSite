@@ -823,7 +823,10 @@ th[scope="row"] {
         align-items: center;
         flex-direction: column;
         padding: 40px; /* Optional: for spacing inside */
+    }
 
+    #introBenefits{
+        margin: 5% 5%;
     }
 
     #testVideos {
@@ -880,7 +883,7 @@ th[scope="row"] {
     }
 
     #bandingSteelImages, #sidingImages, #corrugatedSheetImages, #coiledSteelImages, #toolBinInfo img{
-        margin: 25px;
+        margin: 35px;
     }
 
     #designSection img{
@@ -1020,5 +1023,9 @@ th[scope="row"] {
 
     #logisticsSection img{
         display: none;
+    }
+
+    #logisticsInfo{
+        padding: 0% 5%;
     }
 }
