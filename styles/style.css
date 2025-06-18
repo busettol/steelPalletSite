@@ -23,7 +23,6 @@ p{
     display: flex;
     justify-content: center;
     align-items:end;
-    width: 97.5%;
     margin: 0 auto;
     padding: 0 20px;  
 }
@@ -410,18 +409,20 @@ th[scope="row"] {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap; /* Allow the image and table to stack */
+    padding: 0 5%;
 }
 
 #logisticsData img{
-    width: 35%;
     margin: 5%;
     border-radius: 10%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
 
 }
 
 #logisticsData table{
-  width: 40%;
   border-collapse: collapse;
   margin: 40px 0;
   font-family: 'Segoe UI', sans-serif;
@@ -431,6 +432,10 @@ th[scope="row"] {
   border-radius: 10px;
   overflow: hidden;
   padding: 5 5%;
+  width: 100%;
+  max-width: 600px;
+  overflow-x: auto;
+  display: block;
 }
 
 #logisticsData thead th {
@@ -929,7 +934,9 @@ th[scope="row"] {
     }
 
     #taskbar{
-      gap: 12px;
+      justify-content: center;
+      gap: 20px; /* Reduce spacing between links */
+      padding: 10px;
     }
 
     #introText p{
@@ -1009,5 +1016,9 @@ th[scope="row"] {
   
     #sizes img{
       width: 100%;
+    }
+
+    #logisticsSection img{
+        display: none;
     }
 }
