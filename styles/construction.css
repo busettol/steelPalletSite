@@ -16,12 +16,6 @@ p{
     font-size: 20px;
 }
 
-#centeredText{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .fade-in-section {
   opacity: 0;
   transform: translateY(30px);
@@ -105,11 +99,17 @@ p{
 
 #howItWorksSection{
     background-image: url(../images/construction/darkbackground.jpg);
-    padding: 100px 0px;
+    padding: 5% 0px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#centeredText{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 #howItWorksSection h1{
@@ -143,7 +143,6 @@ p{
   height: 350px;
   object-fit: contain; /* or 'contain' if you want no cropping */
   border-radius: 8px;
-  /* border: white solid 2px; */
 }
 
 
@@ -309,7 +308,14 @@ p{
     
 }
 
-#singleClampInfo p, h3, #doubleClampInfo p, h3, #fireStopInfo p, h3, #coneSleeveInfo p, h3{
+#singleClampInfo p, 
+#singleClampInfo h3, 
+#doubleClampInfo p, 
+#doubleClampInfo h3, 
+#fireStopInfo p, 
+#fireStopInfo h3, 
+#coneSleeveInfo p, 
+#coneSleeveInfo h3{
     text-align: center;
     margin-left: 10%;
     font-size: 150%;
@@ -326,6 +332,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: auto;
 }
 
 table {
@@ -490,31 +497,72 @@ td {
       padding: 10px;
     }
 
+    #introText{
+        margin: 5%;
+    }
 
     #introDetails{
         flex-direction: column;
     }
 
+    #introDetails img{
+        width: 50%;
+    }
+
     #edgeClamp p, #fireStop p, #coneSleeve p{
-        width: 500px;
+        width:fit-content;
+    }
+
+    #oldPiping, #whyItsInefficient{
+        flex-direction: column;
+    }
+
+    #oldSystemSection img{
+        width: 70%;
+    }
+
+    #featuresSection{
+        padding: 5% 0%;
+    }
+
+    #features{
+        padding: 0% 5%;
     }
 
     #problemsImages{
         flex-direction:column;
         justify-content: center;
         align-items: center;
+        margin: 5%;
     }
     #problemsImages img{
         height: 20%;    
     }
 
-
-    #introDetails img{
-        width: 50%;
+    #singleClampInfo, #doubleClampInfo, #fireStopInfo, #coneSleeveInfo{
+        flex-direction: column;
     }
 
-    #howItWorksImages{
-        gap: 10px;
+    #singleClampInfo img, #doubleClampInfo img, #fireStopInfo img{
+        width: 70%;
+        margin: 5% 5%;
+    }
+
+    #coneSleeveInfo img{
+        width: 70%;
+    }
+
+    #howItWorksImages {
+        gap: 5%;
+        padding: 5% 0%;
+    }
+
+    #howItWorksSection p{
+        width: 80%;
+    }
+
+    #howItWorksImages img{
+        height: 30%;
     }
 
     #compareSection{
