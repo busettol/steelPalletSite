@@ -1,6 +1,8 @@
 *{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px;
+    font-size-adjust: 0.545;
+
 }
 
 html{
@@ -385,8 +387,8 @@ td {
 
 #contactSection p{
     font-size: 20px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
 }
 
@@ -567,5 +569,9 @@ td {
 
     #compareSection{
         padding: 5% 0%;
+    }
+
+    #contactSection p{
+        margin: 15% 5%;
     }
 }
