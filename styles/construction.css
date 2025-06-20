@@ -76,7 +76,7 @@ p{
 }
 
 #constructionIntroSection{
-    background-image: url(/images/construction/whiteBackground2.jpg);
+    background-image: url(../images/construction/whiteBackground2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@ p{
 }
 
 #howItWorksSection{
-    background-image: url(/images/construction/darkbackground.jpg);
+    background-image: url(../images/construction/darkbackground.jpg);
     padding: 5% 0px;
     background-size: cover;
     background-position: center;
@@ -167,7 +167,7 @@ p{
 #problemsSection{
     padding-top: 30px;  
     padding-bottom: 30px;  
-    background-image: url(/images/construction/background3.jpg);
+    background-image: url(../images/construction/background3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -206,7 +206,7 @@ p{
 
 
 #oldSystemSection{
-    background-image: url(/images/construction/backgroundvertical.png);
+    background-image: url(../images/construction/backgroundvertical.png);
 }
 
 #oldSystemSection img{
@@ -241,7 +241,7 @@ p{
 }
 
 #featuresSection{
-    background-image: url(/images/construction/background2.jpg);
+    background-image: url(../images/construction/background2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 90px 0px;
@@ -279,7 +279,7 @@ p{
 }
 
 #componentsSection{
-    background-image: url(/images/construction/backgroundvertical.png);
+    background-image: url(../images/construction/backgroundvertical.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 10px;
@@ -328,7 +328,7 @@ p{
 #compareSection{
     text-align: center;
     padding: 5% 15%;
-    background-image: url(/images/construction/background2.jpg);
+    background-image: url(../images/construction/background2.jpg);
 }
 
 #compareTable{
@@ -376,7 +376,7 @@ td {
     text-align: center;
     padding-bottom: 30px;
     padding-top: 20px;
-    background-image: url(/images/construction/background.png);
+    background-image: url(../images/construction/background.png);
     background-size: cover;
     height: 1200px;
 }
