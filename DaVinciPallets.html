@@ -11,60 +11,79 @@
     </head>
 
 <body>
-
     <div id="header">
-        <img id="headerImg" src="images/headerLogo.jpeg">
-    </div>
+    <img id="headerImg" src="/images/headerLogo.jpeg">
+  </div>
 
-    <nav id="taskbar">
-        <a href="/steelPalletSite/automotivePage.html">Automotive</a>
-        <a href="#introSection" style="color: #56c3ed;">Industrial</a>
-        <a href="/steelPalletSite/RiserPro.html">Construction</a>
-    </nav>
-
-
-    <div id="introSection" class="fade-in-section">
-        <h1>DaVinci Steel Pallets</h1>
-        <p style="text-align: center;"><i>Patented: <b>No.: 11,760,537 B1</b></i></p>
-
-        <div id="introBenefits">
-            <h3>Nestable:</h3>
-            <p>• Steel pallets can nest at a height of 0.3", compared to 2" or more with nestable plastic pallets.</p>
-            <h3>Reusable:</h3>
-            <p>• Using steel creates a more durable pallet that provides more uses and a longer lifespan compared to wood and plastic.</p>
-            <h3>Repairable:</h3>
-            <p>• Ability to repair damaged pieces on site by just removing a few screws.</p>
-            <h3>Lightweight:</h3>
-            <p>• 30% lighter than wood, and 20% lighter than plastic pallets.</p>
-            <h3>Big Cost Reductions:</h3>
-            <p>• Reusability reduces the money spent on repairing and replacing wood and plastic pallets.</p>
-            <h3>Environmentally Friendly:</h3>
-            <p>• Wood and Plastic pallets always end up in landfills. Steel can be constantly recycled into new steel, reducing your carbon footprint.</p>
-        </div>
-    </div>
+  <nav id="taskbar">
+    <a href="steelPalletSite/automotivePage.html">Automotive</a>
+    <a href="#introDetails">Industrial</a>
+    <a href="steelPalletSite/RiserPro.html">Construction</a>
+  </nav>
+  <main>
 
     <div id="introDetails">
-        <img id="steelPalletImg" src="images/industry/topView.jpeg">
+        <img id="steelPalletImg" src="/images/industry/topView.jpeg">
+
         <div id="introText">
             <h1>DaVinci Flex Pallet</h1>
-            <p>Created from thin gauge ultra high strength steel, this nestable pallet allows for full customization from materials, to parts and overall configuration.<br>Parts can be ordered and replaced on site with simple tools.</p>
+            <p>Created from thin gauge ultra high strength steel, this nestable pallet allows for full customization from materials, to parts and overall configuration.</p>
+            <p>Parts can be ordered and replaced on site with basic tools.</p>
         </div>
     </div>
-    <div id="introDetails">
+    <!--
+  <div id="introDetails">
         <div id="introText">
             <h1>Dedicated Model Pallet</h1>
             <p>Created for all customer specific applications. No job is too big or small.</p>
         </div>
-        <img id="steelPalletImg" src="images/industry/topView.jpeg">
+        <img id="steelPalletImg" src="{{ 'topView.jpeg' | asset_url }}" alt="TopViewImage">
     </div>
 
     <div id="introDetails">
-        <img id="steelPalletImg" src="images/industry/topView.jpeg">
+        <img id="steelPalletImg" src="{{ 'topView.jpeg' | asset_url }}" alt="TopViewImage">
         <div id="introText">
             <h1>Hybrid Model Pallet</h1>
             <p>Low-cost, high-volume applications pallet alternativeLow-cost, high-volume applications pallet alternativeLow-cost, high-volume applications pallet alternative.</p>
         </div>
     </div>
+  -->
+  
+    <div id="introSection" class="fade-in-section">
+        <h1>Pallets by DaVinci</h1>
+        <p style="text-align: center;"><i>Patented: <b>No.: 11,760,537 B1</b></i></p>
+
+        <div id="introBenefits">
+            <h3>Customizable:</h3>
+            <p>• Full customization on size, materials, attachment methods and more.</p>
+            <h3>Fireproof:</h3>
+            <p>• No risk of burning pallets like with wood and plastic.</p>
+            <h3>Hygenic:</h3>
+            <p>• Smooth, non-porous surfaces help prevent contamination, perfect for industries with strict sanitary standards.</p>
+            <h3>Nestable:</h3>
+            <p>• Can nest at a <b>height of 0.3"</b>, compared to <b>2" or more</b> with nestable plastic pallets.</p>
+            <h3>Reusable:</h3>
+            <p>• Using steel creates a more durable pallet that provides more uses and a <b>longer lifespan</b> compared to wood and plastic.</p>
+            <h3>Rackable:</h3>
+            <p>• Engineered to safely support heavy loads in racking systems, optimizing warehouse storage.</p>
+            <h3>Repairable:</h3>
+            <p>• Ability to repair damaged pieces <b>on site</b> by just removing a few screws.</p>
+            <h3>Refundable:</h3>
+            <p>• When parts are replaced, you can recieve a chunk of your investment back through selling of scrap metal parts (~$0.58/lb)</p>
+            <h3>Recyclable:</h3>
+            <p>• Wood and Plastic pallets always end up in landfills. Steel can be constantly <b>recycled</b> into new steel, reducing your carbon footprint.</p>
+            <h3>Self Liftable:</h3>
+            <p>• Self-lifting mechanism allows forklift operators to take top few pallets off the stack.</p>
+            <h3>Traceable:</h3>
+            <p>• RFID integration gives you full knowledge on the location and status of your pallets and products.</p>
+            <h3>Washable:</h3>
+            <p>• Easy to clean with water or disinfectants, ideal for maintaining cleanliness in sensitive environments.</p>   
+            <h3>Lightweight:</h3>
+            <p>• <b>30%</b> lighter than wood, and <b>20%</b> lighter than plastic pallets.</p>
+            </div>
+    </div>
+
+    
 
     <div id="currentPallets">
         <h1>The Current Pallet Eco-System</h1>
@@ -80,8 +99,8 @@
         </div>
         
         <div id="currentPalletsImg">
-            <img src="images/industry/woodenPalletStack.jpg">
-            <img src="images/industry/plasticPalletStack.jpg">
+            <img src="/images/industry/woodenPalletStack.jpg">
+            <img src="/images/industry/plasticPalletStack.jpg">
         </div>
     </div>
 
@@ -89,7 +108,7 @@
         <h2><i>Enhanced Nestability</i></h2>
         <p>The most innovative addition to the steel pallet is the nestability potential with stacks of these steel pallets. Compared to other nestable pallets, primarily made of plastic, the steel nestable pallets offer a very minimal storing option for a large quantity of pallets. Offering a <b>shorter nested height by up to 3x</b> compared to plastic pallets. </p>
         <div id="nestabilityImg">
-            <img src="images/industry/nestabilityComp.png">
+            <img src="/images/industry/nestabilityComp.png">
         </div>
         <p>
             With the ability to stack the steel pallets at a much shorter height compared to plastic <b>(Only 0.3" per pallet!)</b>, you can transport hundreds more pallets for a similar price compared to much fewer plastic pallets.
@@ -100,7 +119,7 @@
         <h1><i>Designed and manufactured here in Toronto</i></h1>
 
         <div id="designInfo">
-            <img src="images/industry/office.jpeg">
+            <img src="/images/industry/office.jpeg">
             <div>
                 <p>Located in Toronto, Sherwood Innovations ensures the high quality and care put into the design and production of our Steel Pallets. Through a metal stamping process we create the strongest and most durable pallets on the market.</p>
                 <p><b>IATF 16949 Certified</b></p>
@@ -113,7 +132,7 @@
         <h1>Steel Pallet Features & Benefits</h1>
         <p>The Steel Nestable Pallet provides numerous benefits which include:</p>
         <div id="sizes">
-            <img src="images/industry/palletBenefits.png">
+            <img src="/images/industry/palletBenefits.png">
         </div> 
     </div>
 
@@ -121,11 +140,11 @@
         <h2><i>Testing & Development</i></h2>
         <div id="testVideos">
             <div>
-                <img src="images/industry/IMG_9785.JPG">
+                <img src="/images/industry/IMG_9785.JPG">
                 <p><b><i>7,440 lbs/3,372 kg</i></b> supported by a 24" x 24" Steel Pallet</p>
             </div>
             <div>
-                <img src="images/industry/topView.jpeg">
+                <img src="/images/industry/topView.jpeg">
                 <p>24" x 24" Steel Pallet</p>
             </div>
         </div>
@@ -138,9 +157,9 @@
         <p>Though they share the same purpose, the differences between the 3 main pallet materials is extensive and the material chosen can lead to thousands of dollars being lost through repair and replacement.</p>
 
         <div id="palletImages">
-            <img src="images/industry/steelPallet.png">
-            <img src="images/industry/woodPallet.jpeg">
-            <img src="images/industry/plasticPallet.jpeg">
+            <img src="/images/industry/steelPallet.png">
+            <img src="/images/industry/woodPallet.jpeg">
+            <img src="/images/industry/plasticPallet.jpeg">
         </div>
 
         <div id="tableView" class="fade-in-section">
@@ -198,7 +217,7 @@
     <div id="logisticsSection" class="fade-in-section">
         <h1 style="text-align: center;">Logistics (FTL)</h1>
         <div id="logisticsData">
-            <img src="images/industry/logistics.jpg">
+            <img src="/images/industry/logistics.jpg">
             <table>
                 <thead>
                     <tr>
@@ -247,17 +266,19 @@
             <p style="color: #007BFF; font-weight: bold;">Lower logistics cost:</p>
             <p>• Per pallet shipping cheaper with steel than with wood or plastic.</p>
             <p style="color: #007BFF; font-weight: bold;">Lower material handling.</p>
-            <p>• </p>
+            <p>• Carry more pallets to packing station, less space required at packing station.</p>
             <p style="color: #007BFF; font-weight: bold;">Lower warehouse space:</p>
             <p>• Shorter nesting height allows for many more pallets in the same sized spaces.</p>
             <p style="color: #007BFF; font-weight: bold;">Lower insurance cost:</p>
-            <p>• </p>
+            <p>• Wood and plastic pallets are fire hazards, pose safety concerns and are at risk of theft which require expensive insurance.</p>      
             <p style="color: #007BFF; font-weight: bold;">Theft prevention:</p>
             <p>• Easily store pallets inside and prevent the replacement costs for stolen pallets.</p>
             <p style="color: #007BFF; font-weight: bold;">Eliminate shrink wrapping:</p>
-            <p>• Slots for straps easily secure loads on the pallet. Reduce costs as well as your carbon footbrint.</p>
+            <p>• Slots for straps easily secure loads on the pallet. Reduce costs as well as your carbon footprint.</p>
             <p style="color: #007BFF; font-weight: bold;">Scrap Value:</p>
-            <p>• When parts are replaced, you can recieve a chunk of your investment back through selling of scrap metal parts (~$0.58/lb).</p>
+            <p>• When pallet is scrapped, you can receive value back for ~$10 for a 48"x48" pallet.</p>
+            <p style="color: #007BFF; font-weight: bold;">No Disposal Costs:</p>
+            <p>• Avoid cost of disposing pallets (~$2/pallet).</p>
         </div>
         
     </div>
@@ -279,7 +300,7 @@
             <h2>TOOL STEEL BIN NESTABLE PALLET</h2>
 
             <div id="toolBinInfo">
-                <img src="images/industry/toolBinPallet.jpeg">
+                <img src="/images/industry/toolBinPallet.jpeg">
                 <div>
                     <p>For use with moving individual, loose items, the Tool Steel Bin Nestable Pallet is a great addition to maintain cleanliness.</p>
                     <p>Option for wooden flooring available.</p>
@@ -297,8 +318,8 @@
                     <p><b>Max Load: up to 11,000 kg / 24,000 lbs</b></p>
                 </div>
                 <div id="coiledSteelImages">
-                    <img src="images/industry/coiledSteelPallet.jpeg">
-                    <img src="images/industry/coiledSteel.jpg">
+                    <img src="/images/industry/coiledSteelPallet.jpeg">
+                    <img src="/images/industry/coiledSteel.jpg">
                 </div>
             </div>
         </div>
@@ -308,8 +329,8 @@
 
             <div id="corrugatedSteelInfo">
                 <div id="corrugatedSheetImages">
-                    <img src="images/industry/CorrugatedSheetPallet.jpeg">
-                    <img src="images/industry/corrugatedSheet.jpg">
+                    <img src="/images/industry/CorrugatedSheetPallet.jpeg">
+                    <img src="/images/industry/corrugatedSheet.jpg">
                 </div>
                 <div>
                     <p>Built in sizes meant to fully handle large sizes and quantities of all corrugated sheets. Created from hot rolled steel, this pallet will guarantee the safe shipping and delivery of all your corrugated sheet products.</p>
@@ -329,8 +350,8 @@
                     <p><b>Max Load: up to 11,000 kg / 24,000 lbs</b></p>
                 </div>
                 <div id="bandingSteelImages">
-                    <img src="images/industry/BandingSteelPallet.jpeg">
-                    <img src="images/industry/bandingSteel.jpeg">
+                    <img src="/images/industry/BandingSteelPallet.jpeg">
+                    <img src="/images/industry/bandingSteel.jpeg">
                 </div>
             </div>
         </div>
@@ -340,8 +361,8 @@
 
             <div id="sidingPalletInfo">
                 <div id="sidingImages">
-                    <img src="images/industry/SidingPallet.jpeg">
-                    <img src="images/industry/siding.jpg">
+                    <img src="/images/industry/SidingPallet.jpeg">
+                    <img src="/images/industry/siding.jpg">
                 </div>   
                 <div>
                     <p>Created from ultra thin gauge metal, the siding pallet allows the secure movement of all types of siding to any location. 
@@ -371,17 +392,33 @@
                     </div>
                     <div class="form-example">
                         <label for="phone">Phone number (optional):</label>
-                        <input type="text" name="user_phone" id="phone" />
+                        <input type="number" name="user_phone" id="phone" />
                     </div>
                     <div class="form-example">
-                        <label>What are you inquiring about?</label><br />
-                        <div class="radio-group">
-                            <input type="radio" id="customPallet" name="inquiry_type" value="customPallet" required />
-                            <label for="customPallet">Custom Pallets</label><br />
-
-                            <input type="radio" id="generalInquiry" name="inquiry_type" value="generalInquiry" />
-                            <label for="generalInquiry">General Inquiry</label><br />
-                        </div> 
+                        <label>Pallet Length (inches)</label><br />
+                        <input type="number" name="pallet_length" id="palletLength" />
+                    </div>
+                    <div class="form-example">
+                        <label>Pallet Width (inches)</label><br />
+                        <input type="number" name="pallet_width" id="palletWidth" />
+                    </div>
+                    <div class="form-example">
+                        <label>Entry Type</label><br />
+                         <div class="radio-group">
+                              <input type="radio" id="2_way_entry" name="entry_type" value="2Way" required />
+                              <label for="2Way">2-Way</label><br />
+  
+                              <input type="radio" id="4_way_entry" name="entry_type" value="4Way" />
+                              <label for="4Way">4-Way</label><br />
+                          </div> 
+                    </div>
+                    <div class="form-example">
+                        <label>Quantity</label><br />
+                        <input type="number" name="pallet_quantity" id="palletQuantity" />
+                    </div>
+                    <div class="form-example">
+                        <label>Gross Weight (lbs.)</label><br />
+                        <input type="number" name="gross_weight" id="grossWeight" />
                     </div>
                     <div class="form-example">
                         <label for="message">Message: </label>
@@ -396,10 +433,12 @@
     </div>
 
     <div id="footer">
-        <p style="font-size: 25px;">Sherwood Innovations</p>
-        <p>125 Bethridge Rd, Toronto, ON<br>Canada, M6W 1N4</p>
-        <p>416-740-2777</p>
-    </div>
+    <p style="font-size: 25px;">Sherwood Innovations</p>
+    <p>125 Bethridge Rd, Toronto, ON<br>Canada, M6W 1N4</p>
+    <p>416-740-2777</p>
+  </div>
 
+    </main>
 </body>
 </html>
+  
