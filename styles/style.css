@@ -66,7 +66,7 @@ p{
 #currentPallets{
     text-align: center;
     padding: 5% 15%;
-    background-image: url(../images/construction/background2.jpg);
+    background-image: url("../images/construction/background2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -131,7 +131,7 @@ p{
 }
 
 #introSection{
-    background-image: url(../images/industry/whitebackground.jpg);
+    background-image: url("../images/industry/whitebackground.jpg");
     padding: 10px;
 }
 
@@ -397,7 +397,7 @@ th[scope="row"] {
 }
 
 #logisticsSection{
-    background-image: url(../images/industry/whitebackground.jpg);
+    background-image: url("../images/industry/whitebackground.jpg");
     padding: 5% 0%;
 }
 
