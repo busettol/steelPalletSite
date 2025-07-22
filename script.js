@@ -23,6 +23,28 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//riserpro email form
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("questionForm");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    emailjs.sendForm("service_pp5q2fl", "template_exbr5rh", form)
+      .then(function () {
+        // showAlert("Email sent successfully!");
+        alert("Email sent successfully.")
+        form.reset();
+
+      }, function (error) {
+        console.error("Failed to send email:", error);
+        // showAlert("Failed to send email. Please try again.");
+        alert("Failed to send email. Please try again.")
+      });
+  });
+});
+
+
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
