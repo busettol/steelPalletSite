@@ -67,6 +67,72 @@ h1{
   color: #56c3ed;
 }
 
+.tab-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+/* Heading */
+.tab-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #111;
+}
+
+/* Cards layout */
+.tab-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Individual card */
+.tab-card {
+  flex: 1 1 30%;
+  text-decoration: none;
+  background-color: #f3f3f3;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: inherit;
+  border: 2px solid transparent;
+}
+
+.tab-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  border-color: #007bff;
+}
+
+/* Card image */
+.tab-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Title */
+.tab-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Description */
+.tab-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
 #currentPallets{
     text-align: center;
     padding: 5% 15%;
@@ -108,21 +174,6 @@ h1{
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
 }
 
-#introBenefits{
-    margin: 5% 15%;
-}
-
-#introBenefits p{
-    text-align: start;
-}
-
-#introBenefits h3{
-    text-align: start;
-    font-size: 1.5rem;
-    color: #007BFF;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-}
-
 
 #introDetails{
     display: flex;
@@ -130,18 +181,58 @@ h1{
     justify-content: center;
 }
 
-#introSection{
-    background-image: url("../images/industry/whitebackground.jpg");
-    padding: 10px;
+#introSection {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-#introSection h1{
-    text-align: center;
+#introSection h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
-#introSection img{
-        width: 75%;
+#introSection p i {
+  color: #555;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 2rem;
 }
+
+#introBenefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding-top: 10px;
+}
+
+.benefit {
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+}
+
+.benefit:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.benefit h3 {
+  margin-top: 0;
+  color: #003366;
+  font-size: 1.2rem;
+}
+
+.benefit p {
+  margin: 8px 0 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
 
 #introDetails{
     padding-bottom: 45px;

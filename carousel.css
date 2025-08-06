@@ -1,0 +1,80 @@
+#introSection{
+    background-image: url(images/industry/whitebackground.jpg);
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  flex: 1;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 16px;
+  padding: 20px 10px;
+  scroll-behavior: smooth;
+  min-width: max-content;
+}
+
+.carousel-card {
+  flex: 0 0 280px;
+  background: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  scroll-snap-align: start;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.carousel-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  background: #fff;
+  color: #003366;
+}
+
+.card-body {
+  padding: 16px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.carousel-card.active .card-body {
+  display: block;
+}
+
+.carousel-card.active .card-header {
+  border-bottom: 1px solid #ccc;
+}
+
+.carousel-arrow {
+  background: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0 12px;
+  cursor: pointer;
+  color: #003366;
+  z-index: 2;
+  transition: background 0.2s ease;
+}
+
+.carousel-arrow:hover {
+  background: #eee;
+}

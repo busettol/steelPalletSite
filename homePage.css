@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Wrapper */
+.tab-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Heading */
+.tab-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #111;
+}
+
+/* Cards layout */
+.tab-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Individual card */
+.tab-card {
+  flex: 1 1 30%;
+  text-decoration: none;
+  background-color: #f3f3f3;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: inherit;
+  border: 2px solid transparent;
+}
+
+.tab-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  border-color: #007bff;
+}
+
+/* Card image */
+.tab-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Title */
+.tab-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Description */
+.tab-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tab-cards {
+    flex-direction: column;
+  }
+
+  .tab-card {
+    flex: 1 1 100%;
+  }
+}
